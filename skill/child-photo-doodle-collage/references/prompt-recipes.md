@@ -3,7 +3,7 @@
 All templates are for the ImageGen tool (image-to-image). Default parameters:
 
 ```
-size: 1024x1536 (vertical photos) / 1024x1024 (square)
+size: 1024x1536 (vertical photos) / 1024x1024 (square) / landscape for wide shots
 quality: high
 input_fidelity: high
 image1: the user's original photo
@@ -12,7 +12,18 @@ image2/image3 (optional): one or two style refs from assets/
 
 Always tell the user that each generation consumes roughly 5–10 credits before the first call and before each retry.
 
-## Template 1 — Ice Cream + Shoulder Kitten (default, verified)
+**Prompt skeleton (every template follows it):**
+
+```
+保留{面容}、{姿势}、{服装} → {场景：替换为米白摄影棚 / 保留真实背景} →
+逐条列出互动式涂鸦（接触动词：握住/趴在/停在/扒着/从…探出/顶起/长出来/搭在）→
+蜡笔质感 + 色板（按场景模式）→ 手写小字 + 小符号 → 留白构图 →
+不是简单平行贴图
+```
+
+---
+
+## Template 1 — Ice Cream + Shoulder Kitten (classic default, verified)
 
 ```
 儿童创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留小女孩/小男孩的面容、{姿势}、{服装描述}，背景为干净米白色摄影棚。
@@ -34,7 +45,7 @@ Always tell the user that each generation consumes roughly 5–10 credits before
 蜡笔质感、扁平色块、稚拙线条，暖橙黄绿砖红限定色板，涂鸦与人物有真实遮挡接触，不是平行贴图。留白多、童趣梦幻。
 ```
 
-## Template 3 — Prop Echo (ref-05 style, doodles echo real props)
+## Template 3 — Prop Echo (ref-05 style; doodles echo real props)
 
 ```
 儿童创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{儿童}的面容、姿势、{与道具呼应的服装}，背景干净米白摄影棚。
@@ -55,16 +66,100 @@ Always tell the user that each generation consumes roughly 5–10 credits before
 蜡笔质感、扁平色块、暖橙黄绿砖红限定色板，涂鸦与人物有真实接触遮挡，不是平行贴图。留白多、童趣梦幻。
 ```
 
+---
+
+## Template 5 — Airborne / Jumping (motion-lines + real-bag peek) — verified
+
+```
+创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{人物}的面容、表情、腾空跳跃的姿势、{服装描述}、{真实道具：包/帽/鞋}，背景保持干净米白色摄影棚。
+重点：一只手绘蜡笔风的黄色大鸟飞在他/她左侧，翅膀尖正好搭在他/她伸开的手掌上，像牵着一起飞；
+一只手绘橘色小猫从他/她真实的{托特包}里探出头，爪子扒着包口，挂在肩带上；
+一只手绘蝴蝶停在他/她的{帽子}顶上；另一只手绘小鸟与另一只手掌指尖相碰；
+双腿下方画手绘的风线、虚线和几根飘动的羽毛，表示真的飞起来了。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以芥末黄、暖橙、砖红为主，少量天蓝呼应服装。
+涂鸦与人物和真实道具之间有遮挡和接触关系，不是简单平行贴图。配 "Fly" 手写小字、爱心、星星。留白多、童趣梦幻。
+```
+
+## Template 6 — Walking / Striding with Leash-Walk — verified
+
+```
+创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{人物}的侧脸面容、大步行走的姿势、{服装}，背景保持干净米白色摄影棚。
+重点：一只手绘蜡笔风的橘色小狗在他/她前腿旁边同频小跑，四脚离地与他/她同步迈步，鼻尖几乎碰到运动鞋后跟，
+狗绳的一端正好搭在他/她后摆的手指尖上，像真的在遛狗；
+一只手绘黄色小鸟飞在身后，翅膀尖轻碰后摆的手腕；一只手绘绿色小怪兽从身后的T恤下摆探出头张望；
+前迈的脚下方画手绘小草丛，草叶碰鞋底；身后画几道手绘速度线和虚线脚印。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以暖橙、芥末黄、草绿、砖红为主，与{深色穿搭}形成鲜明对比。
+涂鸦与人物之间有遮挡和接触关系，不是简单平行贴图。配 "go go go" 手写小字、爱心、星星。留白多、童趣梦幻。
+```
+
+## Template 7 — Kick + Scene-Keep (colour-matched wall) — verified
+
+```
+创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{人物}的侧脸面容和墨镜、{踢腿姿势}、{同色系服装}，保留{橘色墙面}和地面背景不更换（服装与墙同色是画面核心），光线保持自然。
+重点：他/她踢出的脚尖正好踢中一个手绘蜡笔风的{足球}，球被踢得变形飞起，踢点画 hand-drawn impact 星星和短线，
+沿踢腿轨迹画一条虚线弧线；旁边几只小鸟被踢得四散飞开；
+一只手绘小猫从真实的{托特包}里探出头，爪子扒着包口；一只绿色小怪兽在踢腿弧线旁边抱头躲避；地面缝隙里画出几撮手绘小草。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以奶白、芥末黄、草绿、天蓝为主，在{橘色墙}上鲜明突出。
+涂鸦与人物和真实道具之间有遮挡和接触关系，不是简单平行贴图。配 "Kick!" 手写小字、爱心、星星。童趣梦幻、活力十足。
+```
+
+## Template 8 — Real-Prop Hero (balloon / ball / fish / drink / big shoe) — verified
+
+Pick the verb that matches the real prop:
+
+```
+创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{人物}的面容、{姿势}、{服装}，保留{真实道具}和{背景}不更换。
+重点：一只手绘白色小鸟正好停在真实{气球}的顶部，爪子抓着气球皮；
+一只手绘橘色小猫咬住气球绳的末端，整个身体挂在绳子上荡秋千，绳子被压弯；
+一只手绘小怪兽从他/她踢起的靴子上方跳过去，四足腾空；靴尖周围画手绘 impact 星星和短线。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以白色、橘色、草绿、粉红为主，在{黄墙}上鲜明突出。
+涂鸦与真实气球、绳子、靴子之间有遮挡和接触关系，不是简单平行贴图。配 "Boom!" 手写小字、爱心。童趣梦幻、俏皮活力。
+```
+
+Alternates for the same template:
+
+- real ball in frame → `一只手绘粉色小海豹昂头伸鳍，鼻尖与真实红球之间画两道手绘抛物线，像它刚刚把球顶上天，海豹与红球形成真实的抛接关系`
+- real fish on a line → `在真鱼正下方，一只手绘橘猫腾空跃起，两只前爪伸向鱼，爪尖离鱼只有一点点距离；身后一只小鸟和一只小怪兽排成一列仰头等待，小怪兽手里举着手绘平底锅等着接鱼`
+- real drink with straw → `一只手绘白色海鸥站在肩旁，嘴里叼着自己的小吸管，吸管另一端插进他/她真实的奶昔瓶里偷喝；一只橘红小螃蟹爬上手臂，一只钳子夹着袖口，另一只朝瓶子伸过去`
+- giant foreground shoe → `在真鞋正下方画一只手绘灰色小老鼠，正好在大鞋落下之前回头张望，与鞋底距离极近形成喜剧张力；鞋底边缘压着几根手绘小草，草叶被压弯`
+
+## Template 9 — Upside-Down / Inverted (gravity-fall + mimic) — verified
+
+```
+创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{人物}倒挂的姿势、大笑表情、{服装}，保留{彩色游乐场器材}和地面背景不更换。
+重点：几样手绘蜡笔风的小物件——糖果、硬币、小星星——正从口袋里受重力掉出来，向下撒落，散在头发和脸旁边，悬在空中；
+一只手绘黄色小鸟学着倒挂在他/她旁边的{扶手}上，头朝下看他/她；一只手绘橘色小狗在器材旁边歪头好奇地看着；
+一只鞋的鞋底上画一个手绘笑脸；周围画几圈手绘漩涡线和星星，表示天旋地转的晕眩感。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以奶白、粉红、草绿、天蓝为主。
+涂鸦与人物和器材之间有遮挡和接触关系，不是简单平行贴图。配 "Whoa!" 手写小字、爱心。童趣梦幻、活力十足。
+```
+
+## Template 10 — Lying / Propped on the Floor (mimic) — verified
+
+```
+儿童创意写真摄影，真实照片与蜡笔手绘涂鸦融合。保留{儿童}的面容、{侧躺撑地回头}的姿势、{服装}，背景保持干净米白色摄影棚。
+重点：一只手绘蜡笔风的橘色小狗趴在他/她身旁，用和他/她一模一样的姿势——侧躺、前爪撑地、回头看他/她，
+两个脑袋凑得很近，像在互相打量；一只手绘黄色小鸟站在他/她抬起的膝盖上；
+一只手绘蜗牛慢慢爬向他的运动鞋鞋尖，触角快碰到鞋子了；身后沿着地面画几撮手绘小草和小花；头顶画手绘太阳。
+涂鸦为蜡笔质感、扁平色块、线条简单稚拙，颜色以暖橙、芥末黄、草绿、砖红为主。
+涂鸦与人物身体和鞋子之间有遮挡和接触关系，不是简单平行贴图。配 "hi" 手写小字、爱心、星星。留白多、构图简洁、童趣梦幻。
+```
+
+---
+
 ## Correction Briefs (one targeted retry each)
 
 - Face drifted: `面容与原图完全一致，不要改变五官、发型和表情` + raise input_fidelity; regenerate from the ORIGINAL photo.
 - Doodles floating: append `所有涂鸦必须与人物身体发生物理接触或遮挡：握在手中、趴在肩上、从脚边长出；不是简单平行贴图`。
+- Real prop ignored: name it and describe the exact contact — `小鸟的爪子必须踩在真实{道具}上`、`小猫的爪子必须扒着真实包口`、`绳端必须搭在手指尖上`。
 - Background busy: `背景必须替换为干净的米白色摄影棚纯色背景，保留柔和地面阴影，画面大量留白`。
+- Scene wrongly replaced: `保留{背景描述}不更换，{撞色/场景}是画面核心，不要换成纯色摄影棚背景`。
 - Wrong texture: `涂鸦必须是扁平蜡笔/彩铅质感，纯色块+简单稚拙线条，禁止3D渲染和写实阴影`。
 - Text wrong: `手写字必须准确拼写为 "{word}"，小号，位于空白区域，不遮挡面部`。
+- Watermark / UI text present: `去除{左上角}的水印文字和界面元素，保持背景干净`。
 
 ## Delivery
 
 - Save every output to a new file (never overwrite the source or previous versions).
 - Present via present_files with a 2–4 bullet summary of the interactions realized.
-- Offer iteration: change animal/element/position, or a stronger interaction variant.
+- Offer iteration: change animal / element / position, switch to a stronger interaction tier, or switch scene mode.
